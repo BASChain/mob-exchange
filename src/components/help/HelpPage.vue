@@ -1,24 +1,26 @@
 <template>
-  <div class="hello">
+  <div class="help">
     <bas-head />
     <div class="basLayout">
-      <bas-home />
+      <bas-help />
       <bas-foot />
     </div>
   </div>
 </template>
 
 <script>
-import Header from "./Header"
-import Footer from "./Footer"
-import Home from "./Home"
+import Header from "../Header"
+import Footer from "../Footer"
+import Help from "./Help"
+// import Home from "./Home"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
-    'bas-home': Home,
+    'bas-help': Help
+    // 'bas-home': Home,
   },
-  name: 'HelloWorld',
+  name: 'HelpPage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

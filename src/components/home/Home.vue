@@ -5,7 +5,7 @@
 				<div class="basSloganContent">
 					<!-- {/* <p class="basSloganP1"><span>Block </span>Records Hostory</p> -->
 					<!-- <p class="basSloganP2">Techology<span> Links </span>Future</p> */} -->
-					<img src="../assets/banner-png@2x.png" alt="" class="basSloganImg">
+					<img src="../../assets/banner-png@2x.png" alt="" class="basSloganImg">
 				</div>
 			</div>
 			<div class="basIntro">
@@ -22,15 +22,15 @@
 				<div class="basScrollOut">
 					<div class="basScrollCointaner">
 						<div class="basScrollItem">
-							<img src="../assets/register@2x.png" alt="">
+							<img src="../../assets/register@2x.png" alt="">
 							<p>域名注册</p>
 						</div>
 						<div class="basScrollItem">
-							<img src="../assets/trans@2x.png" alt="" >
+							<img src="../../assets/trans@2x.png" alt="" >
 							<p>域名交易</p>
 						</div>
 						<div class="basScrollItem">
-							<img src="../assets/minner@2x.png" alt="" >
+							<img src="../../assets/minner@2x.png" alt="" >
 							<p>加入矿池</p>
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 			<div class="basCore">
 				<div class="basCoreTitle">全新协议，新世界入口</div>
 				<div class="basCoreTop">
-					<div class="basCoreImg1"><img src="../assets/ppn@2x.png" alt=""></div>
+					<div class="basCoreImg1"><img src="../../assets/ppn@2x.png" alt=""></div>
 					<div class="basCoreTopContent">
 						<p>升级TLS1.3到TLS1.5 支持区</p>
 						<p>块链公钥与签名的安全通</p>
@@ -64,7 +64,7 @@
 				</div>
 				<div class="basCoreBto">
 					<p class="basCoreBtoText">被完全颠覆的Ca中心</p>
-					<div class="basCoreImg2"><img src="../assets/ch@2x.png" alt=""></div>
+					<div class="basCoreImg2"><img src="../../assets/ch@2x.png" alt=""></div>
 				</div>
 			</div>
 			<div class="basFooterPlace"></div>
@@ -89,9 +89,12 @@
 }
 .basSloganImg {
 	width: 100%;
+  height: 100%;
   margin: 0px;
 }
 .basSloganContent {
+  width: 100%;
+  height: 162px;
   text-align: center;
 }
 .basIntro,
@@ -124,6 +127,7 @@
   text-align: center;
   line-height:28px;
   margin-bottom: 0;
+  margin-top: 20px;
 	top: 0;
 }
 .basIntro2 {
@@ -183,6 +187,7 @@
   text-align: center;
   margin-bottom: 0;
   position: absolute;
+  z-index: -1;
 }
 .basScrollItem > img {
   margin-bottom: 0;
@@ -252,7 +257,7 @@
 .basGoal {
   width: 100%;
   height: 304px;
-  background: rgba(4,6,46,1) url("../assets/con_jpg@2x.png") no-repeat;
+  background: rgba(4,6,46,1) url("../../assets/con_jpg@2x.png") no-repeat;
   background-size: auto 247px;
   /* background-origin: padding-box; */
   background-position: 0px 22px;

@@ -20,5 +20,6 @@ export default {
 }
 body {
   margin: 0;
+  background: white;
 }
 </style>

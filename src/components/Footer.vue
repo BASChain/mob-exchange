@@ -2,7 +2,9 @@
   <footer class="basFooter">
 		<div class="flx footerContainer">
 			<img src="../assets/logo@2x.png" alt="" class="basFooterImg">
-			<div class="footerBtn" @click="copyButton">复制链接</div>
+			<div class="footerBtn"
+      :data-clipboard-text="`http://baschain.org`"
+      @click="copyButton">复制链接</div>
 		</div>
 	</footer>
 </template>
@@ -52,13 +54,23 @@
 export default {
 	methods: {
 		copyButton() {
-			var aux = document.createElement("input"); 
-			aux.setAttribute("value", 'http://baschain.org'); 
-			document.body.appendChild(aux); 
-			aux.select();
-			document.execCommand("copy"); 
-			document.body.removeChild(aux);
-			console.log('复制成功✅');
+      let _this = this;
+      let clipboard = new this.clipboard(".footerBtn");
+      clipboard.on('success', function () {
+        _this.$toast('复制成功✅')
+        console.log('复制成功✅')
+      });
+      clipboard.on('error', function () {
+        _this.$toast('复制失败❌')
+        console.log('复制失败❌')
+      });
+			// var aux = document.createElement("input"); 
+			// aux.setAttribute("value", 'http://baschain.org'); 
+			// document.body.appendChild(aux); 
+			// aux.select();
+			// document.execCommand("copy"); 
+			// document.body.removeChild(aux);
+      // console.log('复制成功✅');
 		}
 	}
 }
