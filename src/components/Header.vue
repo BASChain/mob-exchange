@@ -10,7 +10,7 @@
           <ul class="dropdown-menu" v-show="play" @click="clickMenu">
             <li class="dropdown-item" @click="toHome">Home</li>
             <li class="dropdown-item" @click="toSuper">Super Node/Domain Agent</li>
-            <li class="dropdown-item" @click="toHelp">Help</li>
+            <li class="dropdown-item" @click="toHelp">Search</li>
           </ul>
         </div>
       </div>
