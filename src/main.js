@@ -11,6 +11,7 @@ import toast from './components/alert/index'
 
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
+// import Vue from 'vuex'
 
 Vue.use(toast)
 // Vue.use(VueRouter);

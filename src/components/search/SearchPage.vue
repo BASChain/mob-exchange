@@ -2,7 +2,9 @@
   <div class="hello">
     <bas-head />
     <div class="basLayout">
-      <bas-super />
+      <bas-search />
+      <bas-open />
+      <!-- <bas-close /> -->
       <bas-foot />
     </div>
   </div>
@@ -11,14 +13,18 @@
 <script>
 import Header from "../Header"
 import Footer from "../Footer"
-import Super from "./Super"
+import Search from "./Search"
+import SearchClose from "./SearchClose"
+import SearchOpen from "./SearchOpen"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
-    'bas-super': Super,
+    'bas-search': Search,
+    'bas-close': SearchClose,
+    'bas-open': SearchOpen
   },
-  name: 'SuperPage',
+  name: 'SearchPage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

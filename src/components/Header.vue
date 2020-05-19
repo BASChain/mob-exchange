@@ -10,7 +10,8 @@
           <ul class="dropdown-menu" v-show="play" @click="clickMenu">
             <li class="dropdown-item" @click="toHome">Home</li>
             <li class="dropdown-item" @click="toSuper">Super Node/Domain Agent</li>
-            <li class="dropdown-item" @click="toHelp">Search</li>
+            <li class="dropdown-item" @click="toSearch">Search</li>
+            <li class="dropdown-item" @click="toHelp">Help</li>
           </ul>
         </div>
       </div>
@@ -130,6 +131,9 @@ export default {
     },
     toSuper() {
       this.$router.push('/super')
+    },
+    toSearch() {
+      this.$router.push('/search')
     }
   },
   mounted() {
