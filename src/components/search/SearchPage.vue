@@ -2,9 +2,10 @@
   <div class="hello">
     <bas-head />
     <div class="basLayout">
-      <bas-search />
-      <bas-open />
-      <!-- <bas-close /> -->
+      <bas-search v-on:queryData="showData"></bas-search>
+			<!-- <div>{{ res }}</div> -->
+      <bas-open v-if="domainState===0" :inputInfo="this.inputInfo"></bas-open>
+      <bas-close v-if="domainState===1" :result="res"></bas-close>
       <bas-foot />
     </div>
   </div>
@@ -16,6 +17,7 @@ import Footer from "../Footer"
 import Search from "./Search"
 import SearchClose from "./SearchClose"
 import SearchOpen from "./SearchOpen"
+import { queryDomain } from './SearchFunc'
 export default {
   components: {
     'bas-head': Header,
@@ -27,10 +29,29 @@ export default {
   name: 'SearchPage',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+			msg: 'Welcome to Your Vue.js App',
+			inputInfo: '',
+			resData: {
+
+			},
+			domainState: '',
+			res: {
+
+			},
+			asset: {}
     }
-  }
-  
+  },
+  methods: {
+		showData: function(result) {
+			// console.log(result.data)
+			this.res = result
+			this.resData = result.data
+			this.domainState = result.data.state
+			this.inputInfo = result.input
+			this.asset = result.data.assetinfo || {}
+			vm.$forceUpdate()
+		}
+	}
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -39,6 +60,5 @@ export default {
   margin: 0 auto;
   max-width: 960;
   width: 100%;
-  /* padding: 0 1.0875rem 1.45rem; */
 }
 </style>

@@ -1,13 +1,15 @@
 <template>
 	<div class="bas-search-top">
 		<div class="bas-logo">
-			<img src="../../assets/search/logo@3x.png" alt="">
+			<img src="@/assets/search/logo@3x.png" alt="">
 		</div>
 		<div class="bas-search">
-			<Input id="bas-input" prefix="ios-search" placeholder="请输入域名名称" style="width: 85%" size="large" />
+			<Input id="bas-input" prefix="ios-search" placeholder="请输入域名名称"
+			style="width: 85%" size="large" @on-enter="query" v-model="inputInfo" />
 		</div>
 	</div>
 </template>
+
 <style>
 .bas-search-top {
 	width: 100%;
@@ -47,3 +49,41 @@
 	box-shadow: 0px;
 } */
 </style>
+
+<script>
+import { queryBalance, queryDomain } from './SearchFunc'
+
+export default {
+	data() {
+		return {
+			inputInfo: ''
+		}
+	},
+	methods: {
+		async query() {
+			if(this.inputInfo === '' || this.inputInfo === null) {
+				this.$toast('请输入正确的域名')
+				return
+			}
+			try {
+				console.log(this.inputInfo)
+				var data = await queryDomain(this.inputInfo, 3)
+				var result = {
+					data: data,
+					input: this.inputInfo
+				}
+				console.log('##############')
+				console.log(data)
+				this.$emit('queryData', result)
+			} catch(err) {
+				console.log('errorCode:', err)
+			}
+		},
+		async testToast(inputInfo) {
+			var bal = await queryBalance(inputInfo)
+			this.$toast(bal+'')
+			console.log(bal)
+		}
+	}
+}
+</script>

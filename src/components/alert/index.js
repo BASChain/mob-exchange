@@ -6,7 +6,7 @@ toast.install = vue => {
   const ins = new ToastCon()
   ins.$mount(document.createElement('div'))
   document.body.appendChild(ins.$el)
-  vue.prototype.$toast = (msg, duration = 3000) => {
+  vue.prototype.$toast = (msg, duration = 2000) => {
     ins.message = msg
     ins.visible = true
     setTimeout(() => {

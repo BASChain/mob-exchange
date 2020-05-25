@@ -31,7 +31,7 @@
 }
 .dropdown-menu {
   width: 100%;
-  height: 132px;
+  /* height: 132px; */
   /* display: none; */
   background: #F5F6F6;
   /* background: rgba(249,249,249,0.94); */
@@ -138,11 +138,11 @@ export default {
   },
   mounted() {
     $('#bas-menu').on('show.bs.dropdown', function () {
-      console.log('show')
+      // console.log('show')
       this.play = true
     })
     $('#bas-menu').on('hide.bs.dropdown', function () {
-      console.log('hide')
+      // console.log('hide')
       this.play = false
     })
   }

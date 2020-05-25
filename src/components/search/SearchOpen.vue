@@ -1,21 +1,23 @@
 <template>
 	<div class="bas-search-open">
 		<div class="bas-open">
-			<div class="bas-open-title"><span>こんにちは </span>未被注册</div>
+			<div class="bas-open-title"><span>{{ input }}</span> 未被注册</div>
 			<div class="bas-open-tip">去pc端官网注册</div>
 		</div>
 	</div>
 </template>
 <style scoped>
 .bas-open-tip {
-	width: 50%;
+	width: 40%;
 	margin-top: 11px;
+	text-align: right;
+	color:rgba(154,154,170,1);
 }
 .bas-open-title > span {
 	color:rgba(0,202,155,1);
 }
 .bas-open-title {
-	width: 50%;
+	width: 60%;
 	height: 22px;
 	font-size:16px;
 	font-family:PingFangSC-Medium,PingFang SC;
@@ -42,3 +44,14 @@
 	display: flex;
 }
 </style>
+
+<script>
+export default {
+	props: ['inputInfo'],
+	data() {
+		return {
+			input: this.inputInfo
+		}
+	}
+}
+</script>
