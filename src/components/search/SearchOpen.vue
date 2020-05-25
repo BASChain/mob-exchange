@@ -48,9 +48,11 @@
 <script>
 export default {
 	props: ['inputInfo'],
-	data() {
-		return {
-			input: this.inputInfo
+	computed: {
+		input: {
+			get: function() {
+				return this.inputInfo
+			}
 		}
 	}
 }

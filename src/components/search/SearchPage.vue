@@ -42,14 +42,13 @@ export default {
     }
   },
   methods: {
-		showData: function(result) {
-			// console.log(result.data)
+		showData(result) {
+			console.log('SHOW:', result.data)
 			this.res = result
 			this.resData = result.data
 			this.domainState = result.data.state
 			this.inputInfo = result.input
 			this.asset = result.data.assetinfo || {}
-			vm.$forceUpdate()
 		}
 	}
 }
