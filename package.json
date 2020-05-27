@@ -1,6 +1,6 @@
 {
   "name": "m-exchange",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Mobile",
   "author": "guoxiaofu",
   "private": true,
@@ -8,7 +8,8 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "dev-test": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 0.0.0.0",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "zip":"node ci/deploy-zip.js"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -18,7 +19,10 @@
     "sass-loader": "^8.0.2",
     "view-design": "^4.2.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.4.0",
+    "web3": "^1.2.8",
+    "web3-utils": "^1.2.8"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
