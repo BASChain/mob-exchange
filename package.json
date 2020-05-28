@@ -1,6 +1,6 @@
 {
   "name": "m-exchange",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mobile",
   "author": "guoxiaofu",
   "private": true,
@@ -9,7 +9,7 @@
     "dev-test": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 0.0.0.0",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "zip":"node ci/deploy-zip.js"
+    "zip": "node ci/deploy-zip.js"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

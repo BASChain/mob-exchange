@@ -5,7 +5,7 @@
         <img class="bas-alignment" :src="imgs.urlBack" alt="" @click="backTo">
           <p class="basHeadH1">Gatsby Default Starter</p>
         <div id="bas-menu">
-          <img class="bas-alignment"  
+          <img class="bas-alignment"
           :src="this.play ? imgs.urlX: imgs.urlList" alt="" data-toggle="dropdown" @click="clickMenu">
           <ul class="dropdown-menu" v-show="play" @click="clickMenu">
             <li class="dropdown-item" @click="toHome">Home</li>
@@ -104,6 +104,7 @@ header {
 }
 </style>
 <script>
+import $ from 'jquery'
 export default {
 	data() {
     return {
