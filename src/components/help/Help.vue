@@ -62,6 +62,10 @@ export default {
 				{
 					id: 4,
 					text: '如何注册邮箱？'
+				},
+				{
+					id: 5,
+					text: '如何生成邮箱账号?'
 				}
 			]
 		}
@@ -73,11 +77,13 @@ export default {
 			// }
 			switch (itemid) {
 				case 2:
-				this.$router.push('/help/meta-mask')
+					this.$router.push('/help/meta-mask')
 				break;
 				case 4:
-				this.$router.push('/help/bmail-guide')
+					this.$router.push('/help/bmail-guide')
 				break;
+				case 5:
+					this.$router.push('/help/mobile-bmail-guide')
 				default:
 				break;
 			}

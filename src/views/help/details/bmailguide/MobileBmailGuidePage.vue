@@ -2,7 +2,7 @@
   <div class="hello">
     <bas-head />
     <div class="basLayout">
-      <bas-bmailguide />
+      <bas-mobile-bmailguide />
       <bas-foot />
     </div>
   </div>
@@ -11,14 +11,14 @@
 <script>
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import BmailGuide from "@/components/help/details/bmailguide/BmailGuide"
+import MobileBmailGuide from "@/components/help/details/bmailguide/MobileBmailGuide"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
-    'bas-bmailguide': BmailGuide,
+    'bas-mobile-bmailguide': MobileBmailGuide,
   },
-  name: 'BmailGuidePage',
+  name: 'MobileBmailGuidePage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

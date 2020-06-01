@@ -5,6 +5,8 @@ import HomePage from '@/views/home/HomePage'
 import HelpPage from '@/views/help/HelpPage'
 import MetaMaskPage from '@/views/help/details/metamask/MetaMaskPage.vue'
 import BmailGuidePage from '@/views/help/details/bmailguide/BmailGuidePage.vue'
+import MobileBmailGuidePage from '@/views/help/details/bmailguide/MobileBmailGuidePage.vue'
+
 import SuperPage from '@/views/super/SuperPage'
 import SearchPage from '@/views/search/SearchPage.vue'
 
@@ -32,6 +34,11 @@ export default new Router({
       path: '/help/bmail-guide',
       name: 'BmailGuidePage',
       component: BmailGuidePage
+    },
+    {
+      path: '/help/mobile-bmail-guide',
+      name: 'MobileBmailGuidePage',
+      component: MobileBmailGuidePage
     },
     {
       path: '/super',
