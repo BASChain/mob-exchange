@@ -7,7 +7,9 @@
 				</div>
 				<img src="../../assets/super/supnodes_img@2x.png" alt="" class="bas-super-img">
 				<div class="bas-super-price">100,000 <span>BAS/年</span></div>
-				<div class="bas-super-subt">获得三个自定义顶级根域名</div>
+				<div class="bas-super-subt">
+					获得三个自定义顶级根域名
+				</div>
 				<div class="bas-super-content">
 					从域名注册、域名充值、开放自定义价格等操作中获取BAS Token分成签发二级身份验证证书作为超级节点参与社区投票
 				</div>
@@ -244,8 +246,6 @@
 }
 .basHomeContainer {
   height: 100%;
-	/* margin-left: 3%; */
-	/* margin-right: 3%; */
   background:rgba(245,246,246,1);
 }
 .basFooterPlace {

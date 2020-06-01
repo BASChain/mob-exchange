@@ -6,6 +6,7 @@ import HelpPage from '@/components/help/HelpPage'
 import MetaMaskPage from '@/components/details/metamask/MetaMaskPage.vue'
 import SuperPage from '@/components/super/SuperPage'
 import SearchPage from '@/components/search/SearchPage.vue'
+import BmailGuidePage from '@/components/details/bmailguide/BmailGuidePage.vue'
 
 Vue.use(Router)
 Vue.use(Vuex)
@@ -26,6 +27,11 @@ export default new Router({
       path: '/help/meta-mask',
       name: 'MetaMaskPage',
       component: MetaMaskPage
+    },
+    {
+      path: '/help/bmail-guide',
+      name: 'BmailGuidePage',
+      component: BmailGuidePage
     },
     {
       path: '/super',

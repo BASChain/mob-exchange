@@ -58,14 +58,28 @@ export default {
 				{
 					id: 3,
 					text: '如何免费申请测试网域名以及使用BAS系统？'
+        		},
+				{
+					id: 4,
+					text: '如何注册邮箱？'
 				}
 			]
 		}
 	},
 	methods: {
 		clickLink(itemid) {
-			if (itemid===2) {
+			// if (itemid===2) {
+			// 	this.$router.push('/help/meta-mask')
+			// }
+			switch (itemid) {
+				case 2:
 				this.$router.push('/help/meta-mask')
+				break;
+				case 4:
+				this.$router.push('/help/bmail-guide')
+				break;
+				default:
+				break;
 			}
 		}
 	}
