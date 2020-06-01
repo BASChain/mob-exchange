@@ -72,7 +72,6 @@ export default {
 					data: data,
 					input: this.inputInfo
 				}
-				console.log('##############')
 				console.log(data)
 				this.$emit('queryData', result)
 			} catch(err) {
