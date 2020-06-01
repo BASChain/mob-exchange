@@ -4,6 +4,7 @@
     <div class="basLayout">
       <bas-super />
       <bas-foot />
+      <bas-footer-place />
     </div>
   </div>
 </template>
@@ -12,11 +13,13 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Super from "@/components/super/Super"
+import FooterPlace from "@/components/FooterPlace"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
     'bas-super': Super,
+    'bas-footer-place': FooterPlace
   },
   name: 'SuperPage',
   data () {

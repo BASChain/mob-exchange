@@ -52,7 +52,6 @@
 					使用SDK开发中心化域名注册网站，为用户提供域名注册服务和域名交易在BAS官方网站作为合作伙伴，公示账号地址使用SDK每年需缴纳xxBAS的软件服务费
 				</div>
 			</div>
-			<div class="basFooterPlace"></div>
 		</div>
 	</main>
 </template>
@@ -142,11 +141,7 @@
 }
 .bas-domain-img {
 	width: 100%;
-	/* background:rgba(4,6,46,1); */
 	border-radius:4px;
-	/* position: absolute; */
-	/* top: 48px; */
-	/* left: 0; */
 }
 .bas-domain-title {
 	width: 100%;
@@ -196,7 +191,6 @@
 }
 .bas-super-img {
 	width: 100%;
-	/* background:rgba(4,6,46,1); */
 	border-radius:4px;
 }
 .bas-super-title {
@@ -213,7 +207,6 @@
 }
 .bas-super {
 	width: 100%;
-	/* height: 502px; */
 	background:rgba(255,255,255,1);
 	margin-bottom: 8px;
 	padding-bottom: 5px;
@@ -247,10 +240,6 @@
 .basHomeContainer {
   height: 100%;
   background:rgba(245,246,246,1);
-}
-.basFooterPlace {
-  width: 100%;
-  height: 64px;
 }
 </style>
 <script>

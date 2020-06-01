@@ -4,6 +4,7 @@
     <div class="basLayout">
       <bas-home />
       <bas-foot />
+      <bas-footer-place />
     </div>
   </div>
 </template>
@@ -12,11 +13,13 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Home from "@/components/home/Home"
+import FooterPlace from "@/components/FooterPlace"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
     'bas-home': Home,
+    'bas-footer-place': FooterPlace
   },
   name: 'HomePage',
   data () {
@@ -27,12 +30,10 @@ export default {
   
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .basLayout {
   margin: 0 auto;
   max-width: 960;
   width: 100%;
-  /* padding: 0 1.0875rem 1.45rem; */
 }
 </style>

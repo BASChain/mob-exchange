@@ -4,6 +4,7 @@
     <div class="basLayout">
       <bas-mobile-bmailguide />
       <bas-foot />
+      <bas-footer-place />
     </div>
   </div>
 </template>
@@ -12,11 +13,13 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import MobileBmailGuide from "@/components/help/details/bmailguide/MobileBmailGuide"
+import FooterPlace from "@/components/FooterPlace"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
     'bas-mobile-bmailguide': MobileBmailGuide,
+    'bas-footer-place': FooterPlace
   },
   name: 'MobileBmailGuidePage',
   data () {

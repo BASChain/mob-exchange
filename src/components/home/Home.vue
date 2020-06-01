@@ -67,7 +67,7 @@
 					<div class="basCoreImg2"><img src="../../assets/ch@2x.png" alt=""></div>
 				</div>
 			</div>
-			<div class="basFooterPlace"></div>
+			<!-- <div class="basFooterPlace"></div> -->
 		</div>
 	</main>
 </template>
@@ -168,11 +168,8 @@
 .basScrollCointaner {
   display:flex;
   width: 100%;
-  /* padding: 10px 0; */
-  white-space: nowrap;
-  /*文本不会换行，文本会在在同一行上继续*/
+  white-space: nowrap;/*文本不会换行，文本会在在同一行上继续*/
   overflow-x: auto;/*可滑动*/
-  /* overflow-y: auto; */
   display:-webkit-box;
 }
 .basScrollItem > p {
@@ -200,8 +197,6 @@
   height: 135px;
   float: none;
   position: relative;
-  /* background: #fff; */
-  /* display: inline-block; */
 }
 .basScrollTitle {
   width:100%;
@@ -217,7 +212,6 @@
 }
 .basScrollOut {
   overflow: hidden;
-  /* height: 135px; */
   width: 100%;
 }
 .basGoalCont1,
@@ -259,12 +253,9 @@
   height: 304px;
   background: rgba(4,6,46,1) url("../../assets/con_jpg@2x.png") no-repeat;
   background-size: auto 247px;
-  /* background-origin: padding-box; */
   background-position: 0px 22px;
   background-origin: content-box;
   position: relative;
-  /* padding-top: 22px; */
-  /* padding-bottom: 35px; */
 }
 .basGoalBtLeft,
 .basGoalBtRight {
@@ -272,7 +263,6 @@
   height:55px;
   background:rgba(255,255,255,0.2);
   border-radius:4px;
-  /* opacity:0.2; */
 }
 .basGoalBtLeft {
   margin-left: 2%;
@@ -287,7 +277,6 @@
   height: 55px;
   position: absolute;
   bottom: 7px;
-  /* left: 2%; */
   margin: 0;
   display: flex;
   align-items: center;
@@ -414,10 +403,10 @@
   position: absolute;
   top: 0;
 }
-.basFooterPlace {
+/* .basFooterPlace {
   width: 100%;
   height: 64px;
-}
+} */
 </style>
 <script>
 export default {

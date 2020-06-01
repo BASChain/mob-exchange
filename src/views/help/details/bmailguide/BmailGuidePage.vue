@@ -4,6 +4,7 @@
     <div class="basLayout">
       <bas-bmailguide />
       <bas-foot />
+      <bas-footer-place />
     </div>
   </div>
 </template>
@@ -12,16 +13,17 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import BmailGuide from "@/components/help/details/bmailguide/BmailGuide"
+import FooterPlace from "@/components/FooterPlace"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
     'bas-bmailguide': BmailGuide,
+    'bas-footer-place': FooterPlace
   },
   name: 'BmailGuidePage',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
   

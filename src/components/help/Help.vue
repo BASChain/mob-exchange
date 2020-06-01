@@ -72,9 +72,6 @@ export default {
 	},
 	methods: {
 		clickLink(itemid) {
-			// if (itemid===2) {
-			// 	this.$router.push('/help/meta-mask')
-			// }
 			switch (itemid) {
 				case 2:
 					this.$router.push('/help/meta-mask')
