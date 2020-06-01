@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import Header from "../Header"
-import Footer from "../Footer"
-import Search from "./Search"
-import SearchClose from "./SearchClose"
-import SearchOpen from "./SearchOpen"
-import { queryDomain } from './SearchFunc'
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import Search from "@/components/search/Search"
+import SearchClose from "@/components/search/SearchClose"
+import SearchOpen from "@/components/search/SearchOpen"
+import { queryDomain } from '@/components/search/SearchFunc'
 export default {
   components: {
     'bas-head': Header,

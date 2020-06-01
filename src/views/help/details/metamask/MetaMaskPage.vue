@@ -11,7 +11,7 @@
 <script>
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import MetaMask from "./MetaMask"
+import MetaMask from "@/components/help/details/metamask/MetaMask"
 export default {
   components: {
     'bas-head': Header,

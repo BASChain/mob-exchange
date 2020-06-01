@@ -2,23 +2,23 @@
   <div class="hello">
     <bas-head />
     <div class="basLayout">
-      <bas-super />
+      <bas-bmailguide />
       <bas-foot />
     </div>
   </div>
 </template>
 
 <script>
-import Header from "../Header"
-import Footer from "../Footer"
-import Super from "./Super"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import BmailGuide from "@/components/help/details/bmailguide/BmailGuide"
 export default {
   components: {
     'bas-head': Header,
     'bas-foot': Footer,
-    'bas-super': Super,
+    'bas-bmailguide': BmailGuide,
   },
-  name: 'SuperPage',
+  name: 'BMaikGuidePage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

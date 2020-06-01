@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Router from 'vue-router'
-import HomePage from '@/components/home/HomePage'
-import HelpPage from '@/components/help/HelpPage'
-import MetaMaskPage from '@/components/details/metamask/MetaMaskPage.vue'
-import SuperPage from '@/components/super/SuperPage'
-import SearchPage from '@/components/search/SearchPage.vue'
-import BmailGuidePage from '@/components/details/bmailguide/BmailGuidePage.vue'
+import HomePage from '@/views/home/HomePage'
+import HelpPage from '@/views/help/HelpPage'
+import MetaMaskPage from '@/views/help/details/metamask/MetaMaskPage.vue'
+import BmailGuidePage from '@/views/help/details/bmailguide/BmailGuidePage.vue'
+import SuperPage from '@/views/super/SuperPage'
+import SearchPage from '@/views/search/SearchPage.vue'
 
 Vue.use(Router)
 Vue.use(Vuex)
