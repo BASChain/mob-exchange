@@ -5,14 +5,13 @@ import Vuex from 'vuex'
 import App from './App'
 import router from './router'
 global.$ = $
-
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
-import toast from './components/alert';
+Vue.use(ViewUI);
+import toast from '@/components/alert';
 import axios from 'axios'
 Vue.prototype.$axios=axios
 Vue.use(toast)
-Vue.use(ViewUI);
 Vue.use(Vuex)
 Vue.config.productionTip = false
 

@@ -78,11 +78,11 @@ export default {
 				console.log('errorCode:', err)
 			}
 		},
-		async testToast(inputInfo) {
-			var bal = await queryBalance(inputInfo)
-			this.$toast(bal+'')
-			console.log(bal)
-		}
+		// async testToast(inputInfo) {
+		// 	var bal = await queryBalance(inputInfo)
+		// 	this.$toast(bal+'')
+		// 	console.log(bal)
+		// }
 	}
 }
 </script>

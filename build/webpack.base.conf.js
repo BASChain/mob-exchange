@@ -79,9 +79,9 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   },
-//   externals: {
-//     'vue': 'Vue',
-//     'vue-router': 'Router',
-//     'view-design': 'ViewUI'
-//  },
+  // externals: {
+  //   vue: 'Vue',
+  //   'view-design': 'ViewUI',
+  //   jquery: 'jQuery'
+  // },
 }
