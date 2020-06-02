@@ -1,17 +1,17 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+// import Vuex from 'vuex'
 import Router from 'vue-router'
-import HomePage from '@/views/home/HomePage'
-import HelpPage from '@/views/help/HelpPage'
-import MetaMaskPage from '@/views/help/details/metamask/MetaMaskPage.vue'
-import BmailGuidePage from '@/views/help/details/bmailguide/BmailGuidePage.vue'
-import MobileBmailGuidePage from '@/views/help/details/bmailguide/MobileBmailGuidePage.vue'
+const HomePage = () => import('@/views/home/HomePage')
+const HelpPage = () => import('@/views/help/HelpPage')
+const MetaMaskPage = () => import('@/views/help/details/metamask/MetaMaskPage.vue')
+const BmailGuidePage = () =>import('@/views/help/details/bmailguide/BmailGuidePage.vue')
+const MobileBmailGuidePage = () => import('@/views/help/details/bmailguide/MobileBmailGuidePage.vue')
 
-import SuperPage from '@/views/super/SuperPage'
-import SearchPage from '@/views/search/SearchPage.vue'
+const SuperPage = () => import('@/views/super/SuperPage')
+const SearchPage = () => import('@/views/search/SearchPage.vue')
 
 Vue.use(Router)
-Vue.use(Vuex)
+// Vue.use(Vuex)
 
 export default new Router({
   routes: [
@@ -51,9 +51,9 @@ export default new Router({
       component: SearchPage
     }
   ],
-  methods: {
-    goBack() {
-      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
-    }
-  }
+  // methods: {
+  //   goBack() {
+  //     window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+  //   }
+  // }
 })

@@ -110,9 +110,9 @@ export default {
     return {
       play: false,
       imgs: {
-        urlList: require('../assets/listicon@2x.png'),
-        urlX: require('../assets/x@2x.png'),
-        urlBack: require('../assets/back@2x.png')
+        urlList: require('@/assets/listicon@2x.png'),
+        urlX: require('@/assets/x@2x.png'),
+        urlBack: require('@/assets/back@2x.png')
       }
     }
   },
@@ -135,6 +135,10 @@ export default {
     },
     toSearch() {
       this.$router.push('/search')
+      this.$store.commit('showLoading')
+      //这里需要将 axios 提前挂载到 Vue的属性上。
+      // await this.$axios.get('xxx/xxxx/xxx')
+      this.$store.commit('hideLoading')
     }
   },
   mounted() {

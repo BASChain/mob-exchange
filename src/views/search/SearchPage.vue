@@ -43,7 +43,7 @@ export default {
   },
   methods: {
 		showData(result) {
-			console.log('SHOW:', result.data)
+			// console.log('SHOW:', result.data)
 			this.res = result
 			this.resData = result.data
 			this.domainState = result.data.state

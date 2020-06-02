@@ -51,11 +51,12 @@
 }
 </style>
 <script>
+import Clipboard from 'clipboard'
 export default {
 	methods: {
 		copyButton() {
       let _this = this;
-      let clipboard = new this.clipboard(".footerBtn");
+      var clipboard = new Clipboard('.footerBtn');
       clipboard.on('success', function () {
         _this.$toast('复制成功✅')
         console.log('复制成功✅')
