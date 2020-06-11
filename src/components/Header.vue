@@ -3,54 +3,74 @@
 		<header>
       <div class="flx basHeadStyle">
         <img class="bas-alignment" :src="imgs.urlBack" alt="" @click="backTo">
-          <p class="basHeadH1">Gatsby Default Starter</p>
+        <p class="basHeadH1">Gatsby Default Starter</p>
         <div id="bas-menu">
           <img class="bas-alignment"
-          :src="this.play ? imgs.urlX: imgs.urlList" alt="" data-toggle="dropdown" @click="clickMenu">
-          <ul class="dropdown-menu" v-show="play" @click="clickMenu">
-            <li class="dropdown-item" @click="toHome">Home</li>
-            <li class="dropdown-item" @click="toSearch">Search</li>
-            <li class="dropdown-item" @click="toSuper">Super Node/Domain Agent</li>
-            <li class="dropdown-item" @click="toHelp">Help</li>
-          </ul>
+            :src="this.play ? imgs.urlX: imgs.urlList" alt="" @click="clickMenu">
         </div>
       </div>
+      <Dropdown trigger="custom" :visible="play" style="width:100%;left:0px" class="bas-dropdown-menu">
+        <a href="javascript:void(0)" @click="clickMenu"></a>
+        <Dropdown-menu slot="list" style="">
+          <div class="dropdown-item" @click="toHome">Home</div>
+          <div class="dropdown-item" @click="toSearch">Search</div>
+          <div class="dropdown-item" @click="toSuper">Super Node/Domain Agent</div>
+          <div class="dropdown-item" @click="toHelp">Help</div>
+        </Dropdown-menu>
+      </Dropdown>
       <div class="bas-mask" v-show="play" @click="clickMenu"></div>
     </header>
 	</div>
 </template>
-<style scoped>
+<style>
+.ivu-select-dropdown {
+  width: 100%;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  left: 0px;
+  top: 58px;
+  background: rgba(255,255,255,1);
+  /* z-index: 1; */
+}
+
+#bas-menu {
+  width: 18%;
+}
 .bas-mask {
   width: 100%;
   height: 1000px;
   background:rgba(0,0,0,0.3);
   mask-mode: alpha;
-  top: 190px;
+  top: 183px;
   z-index: 999;
-  position: absolute;
+  position: relative;
 }
-.dropdown-menu {
+
+.bas-dropdown-menu {
   width: 100%;
   /* height: 132px; */
   /* display: none; */
   background: #F5F6F6;
   /* background: rgba(249,249,249,0.94); */
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  border: 0;
-  border-radius: 0px;
-  top: 14px !important;
-  left: 5px;
+  border: 0; */
+  /* box-shadow: 0px !important; */
+  top: 53px;
+  left: 5px !important;
   position: absolute;
 }
 .dropdown-item {
   width: 100%;
-  height: 44px;
+  height: 46px;
   padding: 0;
   text-align: right;
   margin: 0;
   padding-right: 4%;
   background: rgba(255,255,255,1);
+  /* background: #F5F6F6; */
   border-radius: 0px;
   font-size:16px;
   font-family:PingFangSC-Medium,PingFang SC;
@@ -59,6 +79,7 @@
   letter-spacing:1px;
   line-height: 44px;
   margin-top: 1px;
+  border-top: 1px solid #F5F6F6;
 }
 .basHeadStyle {
   width: 100%;
@@ -66,21 +87,17 @@
   align-items: center;
   justify-content: space-between;
   overflow: visible;
+  z-index: 3px;
 }
 .bas-alignment {
-  /* width: 16px;
-  height: 16px; */
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 3px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: right;
   transform:scale(0.45);
-  /* -ms-transform:scale(0.45);
-  -webkit-transform:scale(0.45);
-  -o-transform:scale(0.45);
-  -moz-transform:scale(0.45); */
 }
 .basHeadH1 {
   flex: 1;
@@ -125,7 +142,7 @@ export default {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
     },
     toHome() {
-			this.$router.push('/')
+      this.$router.push('/')
     },
     toHelp() {
 			this.$router.push('/help')

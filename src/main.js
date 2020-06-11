@@ -4,7 +4,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import App from './App'
 import router from './router'
-global.$ = $
+// import $ from 'jquery'
+// global.$ = $
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
 Vue.use(ViewUI);
@@ -18,8 +19,6 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 // import clipboard from 'clipboard'
 // Vue.prototype.clipboard = clipboard;
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.min'
 // global.web3 = new Web3('https://ropsten.infura.io/v3/1362a998079949baaea80eb017fe1f0f');
 // import web3 from 'web3'
 // import { mobInfuraWeb3 } from '@/web3-lib/infura/index'

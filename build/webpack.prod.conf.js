@@ -21,6 +21,12 @@ const webpackConfig = merge(baseWebpackConfig, {
       usePostCSS: true
     })
   },
+  // externals: {
+  //   'vue': 'Vue',
+  //   'view-design': 'ViewUI',
+  //   'vue-router': 'VueRouter',
+  //   'jquery': 'jQuery'
+  // },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
     path: config.build.assetsRoot,

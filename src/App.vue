@@ -5,7 +5,6 @@
       <Spin v-if='LOADING' size="large"></Spin>
       <!-- <Spin size="large"></Spin> -->
     </div>
-    
   </div>
 </template>
 
