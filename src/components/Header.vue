@@ -3,7 +3,7 @@
 		<header>
       <div class="flx basHeadStyle">
         <img class="bas-alignment" :src="imgs.urlBack" alt="" @click="backTo">
-        <p class="basHeadH1">Gatsby Default Starter</p>
+        <p class="basHeadH1">Baschain Addressing System</p>
         <div id="bas-menu">
           <img class="bas-alignment"
             :src="this.play ? imgs.urlX: imgs.urlList" alt="" @click="clickMenu">
