@@ -33,7 +33,7 @@
     "babel-plugin-transform-vue-jsx": "^3.5.0",
     "babel-preset-env": "^1.3.2",
     "babel-preset-stage-2": "^6.22.0",
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.7",
     "chalk": "^2.0.1",
     "compression-webpack-plugin": "^1.1.12",
     "copy-webpack-plugin": "^4.0.1",
